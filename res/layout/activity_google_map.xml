@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget35"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	>
+<ToggleButton
+	android:id="@+id/togglemarkzoom"
+	android:layout_width="160dp"
+	android:layout_height="wrap_content"
+	android:textOn="Zoom"
+	android:textOff="Mark Point"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentRight="true" 
+	android:onClick="onToggleMarkZoomClicked"/>
+<ToggleButton
+	android:id="@+id/togglejobsend"
+	android:layout_width="160dp"
+	android:layout_height="wrap_content"
+	android:textOn="Join Destination&amp; Send"
+	android:textOff="Get Job"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentLeft="true" 
+	android:onClick="onToggleJobSendClicked"/>
+
+<com.google.android.maps.MapView
+    android:id="@+id/mapView"
+    android:layout_width="fill_parent"
+    android:layout_height="387dp"
+    android:layout_above="@+id/togglemarkzoom"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:apiKey="0vlrwZD1nU4cdpE2cKkTX-Rdg3hQa078RTCR4gA"
+    android:clickable="true"
+    android:enabled="true" />
+
+	<LinearLayout android:id="@+id/zoom" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true" 
+        />
+</RelativeLayout>
